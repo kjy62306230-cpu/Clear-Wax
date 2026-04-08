@@ -23,12 +23,14 @@
 
 /* ===== RESET & BASE ===== */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
 body {
   font-family: 'Noto Sans KR', sans-serif;
   color: #1e3148;
   background: #f7faff;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
@@ -39,8 +41,7 @@ body {
 .section-sky-light { background: #f0f6fc; }
 .section-white { background: #ffffff; }
 .section-cool { background: linear-gradient(135deg, #1a2f47, #1e3148); color: #ffffff; }
-.text-center { text-align: center;
-  white-space: nowrap; }
+.text-center { text-align: center; }
 .serif { font-family: 'Playfair Display', serif; }
 .mt-12 { margin-top: 12px; }
 .mt-24 { margin-top: 24px; }
@@ -100,7 +101,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  white-space: nowrap;
   background: linear-gradient(180deg, #ffffff 0%, #f0f6fc 50%, #e8f0fa 100%);
   position: relative;
   overflow: hidden;
@@ -375,7 +375,6 @@ body {
   border-radius: 16px;
   padding: 28px 20px;
   text-align: center;
-  white-space: nowrap;
   transition: all 0.4s ease;
   cursor: default;
 }
@@ -529,7 +528,6 @@ body {
 }
 .stat-item {
   text-align: center;
-  white-space: nowrap;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -542,7 +540,6 @@ body {
   color: #ffffff;
   line-height: 1;
   text-align: center;
-  white-space: nowrap;
 }
 .stat-label {
   font-size: 13px;
@@ -550,7 +547,6 @@ body {
   margin-top: 8px;
   font-weight: 400;
   text-align: center;
-  white-space: nowrap;
 }
 .trust-quote {
   margin-top: 60px;
@@ -558,7 +554,6 @@ body {
   border: 1px solid rgba(91,163,217,0.3);
   border-radius: 20px;
   text-align: center;
-  white-space: nowrap;
   background: rgba(255,255,255,0.05);
 }
 .trust-quote p {
@@ -611,7 +606,6 @@ body {
   color: #ffffff;
   padding: 100px 24px;
   text-align: center;
-  white-space: nowrap;
 }
 .cta-title {
   font-family: 'Playfair Display', serif;
@@ -720,13 +714,13 @@ body {
 }
 .floating-cta.visible { transform: translateY(0); }
 .floating-cta .btn-float {
+  white-space: nowrap;
   padding: 10px 14px;
   border-radius: 8px;
   font-size: 12px;
   font-weight: 700;
   text-decoration: none;
   text-align: center;
-  white-space: nowrap;
   flex: 1;
   transition: all 0.3s ease;
 }
@@ -749,7 +743,6 @@ body {
   color: rgba(255,255,255,0.6);
   padding: 40px 24px;
   text-align: center;
-  white-space: nowrap;
   font-size: 12px;
   line-height: 2;
 }
@@ -1074,7 +1067,6 @@ body {
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
   transition: background 0.3s;
   letter-spacing: 0.5px;
-  white-space: nowrap;
 }
 .lang-toggle:hover { background: rgba(30,49,72,1); }
 
